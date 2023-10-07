@@ -71,10 +71,10 @@ document.querySelector('#hobbies').appendChild(li);
 myProfile.placesLived.forEach(place => {
 
 let dt = document.createElement('dt');
-dt.textContent = place.place;
+dt.innerHTML = `<strong>${place.place}`;
 
 let dd = document.createElement('dd');
-dd.textContent = place.length;
+dd.innerHTML = place.length;
 
 document.querySelector('#places-lived').appendChild(dt);
 document.querySelector('#places-lived').appendChild(dd);
